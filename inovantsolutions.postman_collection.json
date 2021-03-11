@@ -1,0 +1,62 @@
+{
+	"variables": [],
+	"info": {
+		"name": "inovantsolutions",
+		"_postman_id": "cd9bbbdc-84dd-2b1e-0d9e-1b04537e9ef0",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get product and multiple images",
+			"request": {
+				"url": "http://localhost/inovantsolutions/webservices/products/get_products_and_images",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add to Cart",
+			"request": {
+				"url": "http://localhost/inovantsolutions/webservices/cart/add_to_cart",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"product_id\":2\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "User Cart Product",
+			"request": {
+				"url": "http://localhost/inovantsolutions/webservices/cart/get_user_cart",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"user_id\":1}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,3 @@
+; body (*)[id]; meta link [*]",requiredContent:"body"});a.addMode("wysiwyg",function(f){function b(b){b&&b.removeListener();
+a.editable(new l(a,d.$.contentWindow.document.body));a.setData(a.getData(1),f)}var c="document.open();"+(CKEDITOR.env.ie?"("+CKEDITOR.tools.fixDomain+")();":"")+"document.close();",c=CKEDITOR.env.air?"javascript:void(0)":CKEDITOR.env.ie&&!CKEDITOR.env.edge?"javascript:void(function(){"+encodeURIComponent(c)+"}())":"",d=CKEDITOR.dom.element.createFromHtml('\x3ciframe src\x3d"'+c+'" frameBorder\x3d"0"\x3e\x3c/iframe\x3e');d.setStyles({width:"100%",height:"100%"});d.addClass("cke_wysiwyg_frame").addClass("cke_reset");
+c=a.ui.space("contents
